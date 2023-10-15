@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div className='flex justify-between items-center font-nunito'>
         <div className='font-extrabold text-3xl  tracking-[0.375rem]'>Ascend.Ai</div>
-        <div className='flex gap-4 text-sm'>
+        <div className='flex gap-4 text-lg'>
             <div>Home</div>
             <div>About</div>
             <div>Features</div>
