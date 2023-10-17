@@ -11,14 +11,14 @@ interface DataItem {
 const data: DataItem[] = [
   {
     id: 1,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
   },
   {
     id: 2,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
@@ -26,7 +26,7 @@ const data: DataItem[] = [
 
   {
     id: 3,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
@@ -34,7 +34,7 @@ const data: DataItem[] = [
 
   {
     id: 4,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
@@ -42,7 +42,7 @@ const data: DataItem[] = [
 
   {
     id: 5,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
@@ -50,7 +50,7 @@ const data: DataItem[] = [
 
   {
     id: 6,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
@@ -58,7 +58,7 @@ const data: DataItem[] = [
 
   {
     id: 7,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
@@ -66,7 +66,7 @@ const data: DataItem[] = [
 
   {
     id: 8,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
@@ -74,7 +74,7 @@ const data: DataItem[] = [
 
   {
     id: 9,
-    icon: "",
+    icon: "/icon.svg",
     title: "User information",
     description:
       "Lorem ipsum dolor sit amet consectetur. Turpis tristique nulla posuere et amet arcu dictum ultricies convallis",
