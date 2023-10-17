@@ -4,8 +4,10 @@ const Description = (props) => {
   return (
     <div className="flex justify-center">
       <div className="bg-gradient-to-r from-indigo-900/[0.1] via-violet-900/[0.3] via-80% to-purple-900/[0.3] w-[45.0625rem] h-[23.125rem] mt-14 py-16 px-16 rounded-3xl">
+
         <h4 className="font-nunito text-3xl font-bold pb-10 transition duration-700  ">
           Stage - {props.aboutLists[props.Selected]}
+
         </h4>
         <p className="text-m">
           The path to outstanding products is marked by a well-structured
