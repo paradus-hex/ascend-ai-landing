@@ -1,8 +1,8 @@
-import About from "./components/about/about";
-import HomeSection from "./components/home/home";
-import Nav from "./components/nav";
-import Features from "./components/mid-section/features";
-import Review from "./components/mid-section/client-review/review";
+import About from "@/components/about/about";
+import HomeSection from "@/components/home/home";
+import Nav from "@/components/nav";
+import Features from "@/components/mid-section/features";
+import Contacts from "@/components/contact/contacts";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <HomeSection />
       <About />
       <Features />
-      <Review />
+      <Contacts/>
     </main>
   );
 }
