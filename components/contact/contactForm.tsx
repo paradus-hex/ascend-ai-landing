@@ -8,7 +8,6 @@ import { Button } from "../ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -16,13 +15,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 
 const FormSchema = z.object({
   username: z.string().min(2, {
@@ -33,7 +25,7 @@ const FormSchema = z.object({
     .string()
     .min(1, { message: "This field has to be filled." })
     .email("This is not a valid email."),
-  budget: z.string().min(3, { message: "Please select a budget." }),
+  budget: z.string(),
 });
 
 const ContactForm = () => {
@@ -127,23 +119,11 @@ const ContactForm = () => {
                       Budget of your project
                     </FormLabel>
                     <FormControl>
-                      {/* <Input
-                    placeholder="500$"
+                      <Input
+                    placeholder="Let's discuss"
                     {...field}
                     className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl p-6 text-lg"
-                  /> */}
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <SelectTrigger className="w-full bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl p-6 text-lg">
-                          <SelectValue placeholder="" />
-                        </SelectTrigger>
-                        <SelectContent >
-                          <SelectItem value="Less than $500" >Less than $500</SelectItem>
-                          <SelectItem value="$500 - $2500">$500 - $2500</SelectItem>
-                          <SelectItem value="$2500 - $5000">$2500 - $5000</SelectItem>
-                          <SelectItem value="$5000 - $10000">$5000 - $10000</SelectItem>
-                          <SelectItem value="More than $10000">More than $10000</SelectItem>
-                        </SelectContent>
-                      </Select>
+                  />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
