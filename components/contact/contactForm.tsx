@@ -48,12 +48,14 @@ const ContactForm = () => {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof FormSchema>) {
-    axios.post('https://eopibqyhnfh45bi.m.pipedream.net',{
+  const onSubmit = async (values: z.infer<typeof FormSchema>) => {
+      const time = new Date();
+      const post = await axios.post('https://eopibqyhnfh45bi.m.pipedream.net',{
       "username": values.username,
       "help": values.help,
       "email": values.email,
       "budget": values.budget,
+      "time": time.toLocaleString()
     });
   }
 
