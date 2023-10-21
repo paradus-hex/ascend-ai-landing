@@ -14,6 +14,9 @@ const SubHeading = () => {
           <Button text={"Join"} />
           <SecondaryButton text={"Let's Talk"} />
         </div>
+        <div className="absolute top-0 -z-10 h-full w-full"/>
+          <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[#121f6b] opacity-50 blur-[80px]"/>
+          <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_10%,#121f6b_180%)]"></div>
       </div>
     </div>
   );

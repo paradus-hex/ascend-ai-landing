@@ -16,7 +16,7 @@ const About = () => {
   }
 
   return (
-    <div >
+    <div className='' >
         <AboutHeading/>
         <ToggleTab aboutLists={[...aboutLists]} Selected={Selected} setSelected={setSelected} clickedTab={clickedTab}/>
         <Description aboutLists={[...aboutLists]} Selected={Selected}/>

@@ -3,8 +3,8 @@ import React from "react";
 const Description = (props: any) => {
   return (
     <div className="flex justify-center">
-      <div className="bg-gradient-to-r from-indigo-900/[0.1] via-violet-900/[0.3] via-80% to-purple-900/[0.3] w-[45.0625rem] h-[23.125rem] mt-14 py-16 px-16 rounded-3xl">
-        <h4 className="font-nunito text-3xl font-bold pb-10 transition duration-700  ">
+      <div className="bg-gradient-to-r from-indigo-900/[0.1] via-violet-900/[0.3] via-80% to-purple-900/[0.3] w-[30rem] h-[25rem] md:w-[45.0625rem] md:h-[23.125rem] mt-14 py-16 px-16 rounded-3xl">
+        <h4 className="font-nunito text-m md:text-3xl font-bold pb-10 transition duration-700  ">
           Stage - {props.aboutLists[props.Selected]}
         </h4>
         <p className="text-m">
