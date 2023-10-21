@@ -35,7 +35,7 @@ const Nav = () => {
         </div>
       </div>
 
-      <div onClick={navHandler} className="block md:hidden">
+      <div onClick={navHandler} className="float md:hidden">
         {!nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
       </div>
 
