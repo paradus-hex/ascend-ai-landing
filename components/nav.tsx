@@ -11,11 +11,11 @@ const Nav = () => {
   };
 
   return (
-    <div className="flex justify-between items-center font-nunito mt-[2rem] mr-[15rem] ml-[15rem]">
-      <div className="font-extrabold text-3xl  tracking-[0.375rem] max-w-[1250px]">
+    <div className="flex justify-between items-center z-20 font-nunito mt-[2rem] mr-[15rem] ml-[15rem]">
+      <div className="font-extrabold text-3xl tracking-[0.375rem] max-w-[1250px]">
         Ascend.Ai
       </div>
-      <div className="hidden md:flex">
+      <div className="hidden md:flex lg:flex lg:items-center">
         <ul className="flex text-lg">
           <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer">
             Home
