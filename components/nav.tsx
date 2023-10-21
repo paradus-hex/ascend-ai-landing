@@ -1,77 +1,53 @@
-"use client";
-import React, { useState } from "react";
-import Button from "./button";
-import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+"use client"
 
-const Nav = () => {
-  const [nav, setNav] = useState(false);
+import * as React from "react"
+import Link from "next/link"
+import { Menu, Search } from "lucide-react"
+import Button from "./button"
 
-  const navHandler = () => {
-    setNav(!nav);
-  };
+export default function Nav() {
+  const [state, setState] = React.useState(false)
+
+  const menus = [
+    { title: "Home", path: "/your-path" },
+    { title: "About", path: "/your-path" },
+    { title: "Features", path: "/your-path" },
+    { title: "Contact", path: "/your-path" },
+  ]
 
   return (
-    <div className="flex justify-between items-center z-20 font-nunito mt-[2rem] mr-[15rem] ml-[15rem]">
-      <div className="font-extrabold text-3xl tracking-[0.375rem] max-w-[1250px]">
-        Ascend.Ai
-      </div>
-      <div className="hidden md:flex lg:flex lg:items-center">
-        <ul className="flex text-lg">
-          <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer">
-            Home
-          </li>
-          <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer">
-            About
-          </li>
-          <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer">
-            Features
-          </li>
-          <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer">
-            Contact
-          </li>
-        </ul>
-        <div>
-          <Button text={"Login"} />
-        </div>
-      </div>
-
-      <div onClick={navHandler} className="float md:hidden">
-        {!nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-      </div>
-
-      <div
-        className={
-          !nav
-            ? "fixed left-0 top-0 w-[60%] h-full ease-in-out duration-500"
-            : "fixed left-[-100%]"
-        }
-      >
-        <div className="bg-gray-900 h-full md:hidden">
-          <div className="font-extrabold text-3xl  tracking-[0.375rem] m-4">
-            Ascend.Ai
+    <nav className="w-full border-b md:border-0 font-nunito">
+      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+        <div className="flex items-center justify-between py-3 md:py-5 md:block">
+          <Link href="/">
+            <h1 className="text-3xl font-bold">Ascend.AI</h1>
+          </Link>
+          <div className="md:hidden">
+            <button
+              className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 ease-in-out duration-500"
+              onClick={() => setState(!state)}
+            >
+              <Menu />
+            </button>
           </div>
-
-          <ul className="p-4">
-            <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer border-b border-gray-600">
-              Home
-            </li>
-            <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer border-b border-gray-600">
-              About
-            </li>
-            <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer border-b border-gray-600">
-              Features
-            </li>
-            <li className="p-4 text-[#8F9BB7] hover:text-white cursor-pointer border-b border-gray-600">
-              Contact
-            </li>
+        </div>
+        <div
+          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            state ? "block ease-in-out duration-500" : "hidden"
+          }`}
+        >
+          <ul className="justify-center items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            {menus.map((item, idx) => (
+              <li key={idx} className="text-[#8F9BB7] hover:text-white cursor-pointer">
+                <Link href={item.path}>{item.title}</Link>
+              </li>
+            ))}
+            <div className="flex md:pl-32 md:space-x-2">
+             <Button text={'Login'}/>
+            </div>
           </ul>
-          <div className="p-4">
-            <Button text={"Login"} />
-          </div>
         </div>
       </div>
-    </div>
-  );
-};
-
-export default Nav;
+    </nav>
+  )
+}

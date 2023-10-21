@@ -85,7 +85,7 @@ const Features = () => {
   return (
     <div>
       <div className="font-nunito text-center">
-        <h1 className="font-bold text-6xl pt-[18rem] pb-[6rem] bg-gradient-to-t from-stone-950 via-stone-200 to-stone-100 inline-block text-transparent bg-clip-text">
+        <h1 className="font-bold text-5xl md:text-6xl pt-[18rem] pb-[6rem] bg-gradient-to-t from-stone-950 via-stone-200 to-stone-100 inline-block text-transparent bg-clip-text">
           Creating a Digital Ecosystem Tailored to Your Needs
         </h1>
       </div>
