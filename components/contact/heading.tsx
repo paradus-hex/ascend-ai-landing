@@ -10,7 +10,7 @@ const Heading = () => {
 
       <p className="font-inter w-[75rem] text-sm px-[10rem] text-[#8F9BB7] mt-10">
         Get started on your AI journey today. Reach out to us for a free
-        consultation. Let's work together to transform your business and ascend
+        consultation. {`Let's`} work together to transform your business and ascend
         to new heights.
       </p>
       </div>
