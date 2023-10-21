@@ -36,7 +36,7 @@ const ContactForm = () => {
   };
   return (
     <>
-    <div className="mx-[20rem] mb-16">
+    <div className="mx-[40rem] mb-16">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-10">
           <FormField
