@@ -21,7 +21,10 @@ input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px #37407b inset !important;
     -webkit-text-fill-color: aliceblue;
 }
+.pup{
 
+  color:#6f0091
+}
 * {
   scrollbar-width: thin;
 
