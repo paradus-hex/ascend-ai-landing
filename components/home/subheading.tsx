@@ -6,7 +6,7 @@ const SubHeading = () => {
   return (
     <div>
       <div className="font Inter text-center">
-        <h2 className="font-inter text-lg px-[10rem] text-[#8F9BB7]">
+        <h2 className="font-inter -mt-16 text-lg px-[10rem] text-[#8F9BB7]">
           Elevate Your Business To Exceptional Performance and Growth With Our
           State-of-the-Art Artificial Intilligence and Automation Solutions
         </h2>
@@ -14,9 +14,9 @@ const SubHeading = () => {
           <Button text={"Join"} />
           <SecondaryButton text={"Let's Talk"} />
         </div>
-        <div className="absolute top-0 -z-10 h-full w-full"/>
+        <div className="absolute top-0 -z-10 h-full "/>
           <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[#121f6b] opacity-50 blur-[80px]"/>
-          <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_10%,#121f6b_180%)]"></div>
+          <div className="absolute inset-0 -z-10 h-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_10%,#121f6b_180%)]"></div>
       </div>
     </div>
   );

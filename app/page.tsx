@@ -9,11 +9,13 @@ export default function Home() {
   return (
     <main>
       <Nav />
-      <HomeSection />
-      <About />
-      <Features />
-      <Contacts/>
-      <Footer/>
+      <div className="container">
+        <HomeSection />
+        <About />
+        <Features />
+        <Contacts />
+      </div>
+      <Footer />
     </main>
   );
 }
