@@ -53,7 +53,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="lg:mx-[17rem] md:mx-[7rem] mb-16">
+      <div className="lg:mx-[17rem] md:mx-[7rem] m-[2rem]">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-10">
             <FormField
@@ -61,12 +61,12 @@ const ContactForm = () => {
               name="username"
               render={({ field }) => (
                 <FormItem className="font-nunito">
-                  <FormLabel className="text-lg">Your Name</FormLabel>
+                  <FormLabel className="text-m lg:text-lg">Your Name</FormLabel>
                   <FormControl>
                     <Input
                       placeholder="John Doe"
                       {...field}
-                      className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl p-6 text-lg"
+                      className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl p-6 text-m lg:text-lg"
                     />
                   </FormControl>
                   <FormMessage />
@@ -78,32 +78,32 @@ const ContactForm = () => {
               name="help"
               render={({ field }) => (
                 <FormItem className="font-nunito ">
-                  <FormLabel className="text-lg">
+                  <FormLabel className="text-m lg:text-lg">
                     How can we help you?
                   </FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="I want to build a custom AI chatbot for my e-commerce business that can serve as a customer care representative..."
                       {...field}
-                      className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl pb-20 text-lg"
+                      className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl pb-20 text-m lg:text-lg"
                     />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <div className="flex w-full gap-5">
+            <div className="lg:flex w-full gap-5">
               <FormField
                 control={form.control}
                 name="email"
                 render={({ field }) => (
                   <FormItem className="w-full font-nunito">
-                    <FormLabel className="text-lg">Your E-mail</FormLabel>
+                    <FormLabel className="text:m lg:text-lg">Your E-mail</FormLabel>
                     <FormControl>
                       <Input
                         placeholder="johndoe@gmail.com"
                         {...field}
-                        className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl p-6 text-lg"
+                        className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl p-6 text-m lg:text-lg"
                       />
                     </FormControl>
                     <FormMessage />
@@ -114,15 +114,15 @@ const ContactForm = () => {
                 control={form.control}
                 name="budget"
                 render={({ field }) => (
-                  <FormItem className="w-full font-nunito">
-                    <FormLabel className="text-lg">
+                  <FormItem className="w-full font-nunito pt-[2rem] lg:pt-[0rem]">
+                    <FormLabel className="text-m lg:text-lg">
                       Budget of your project
                     </FormLabel>
                     <FormControl>
                       <Input
                     placeholder="Let's discuss"
                     {...field}
-                    className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl p-6 text-lg"
+                    className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl p-6 text-m lg:text-lg"
                   />
                     </FormControl>
                     <FormMessage />
