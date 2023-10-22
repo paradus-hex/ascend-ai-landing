@@ -85,7 +85,7 @@ const ContactForm = () => {
                     <Textarea
                       placeholder="I want to build a custom AI chatbot for my e-commerce business that can serve as a customer care representative..."
                       {...field}
-                      className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl pb-20 text-m lg:text-lg"
+                      className="bg-[#1519347D] border-2 border-[#A8E9FF] rounded-2xl pb-20 text-m lg:text-lg overflow-hidden"
                     />
                   </FormControl>
                   <FormMessage />
