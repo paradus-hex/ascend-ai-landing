@@ -14,11 +14,11 @@ const AboutHeading = () => {
         transition: {
           type: "spring",
           bounce: 0.4,
-          duration: 0.8}
+          duration: 2}
         }
       }
-      viewport={{  amount: 0.8 }}
-      className="card-container lg:[--x-from:-10rem] lg:[--x-to:0rem] lg:[--opacity-from:100%] lg:[--opacity-to:100%] md:[--opacity-from:0%] md:[--opacity-to:100%] [--opacity-from:0%] [--opacity-to:100%]"
+      viewport={{ once: true, amount: 0.8 }}
+      className="card-container lg:[--x-from:-20rem] lg:[--x-to:0rem] lg:[--opacity-from:100%] lg:[--opacity-to:100%] md:[--opacity-from:0%] md:[--opacity-to:100%] [--opacity-from:0%] [--opacity-to:100%]"
       >
 
       <h1 className="text-primary text-3xl font-bold  md:text-start text-center md:text-4xl sm:text-center lg:text-5xl pt-[2.5rem] font-nunito bg-gradient-to-t from-stone-600 via-stone-400 to-stone-100 text-transparent bg-clip-text">
@@ -33,11 +33,11 @@ const AboutHeading = () => {
           transition: {
             type: "spring",
             bounce: 0.4,
-            duration: 0.8}
+            duration: 2}
           }
         }
         className=" lg:w-[38rem] lg:text-md pt-[2rem] text-center lg:text-start my-5 text-[#8F9BB7] lg:[--x-from:10rem] lg:[--x-to:0rem] lg:[--opacity-from:100%] lg:[--opacity-to:100%] md:[--opacity-from:0%] md:[--opacity-to:100%] [--opacity-from:0%] [--opacity-to:100%]"
-      viewport={{ amount: 0.8 }}
+      viewport={{ once: true, amount: 0.8 }}
       >
 
       <p>
