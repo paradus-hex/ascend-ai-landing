@@ -13,10 +13,12 @@ export default function Navbar() {
   const [state, setState] = React.useState(false)
 
   const menus = [
-    { icon: <AiOutlineHome/>, title: "Home", path: "/your-path" },
-    { icon: <AiOutlineQuestionCircle/>, title: "About", path: "/your-path" },
-    { icon: <BsStars/>, title: "Features", path: "/your-path" },
-    { icon: <BsTelephone/>, title: "Contact", path: "" },
+
+    { icon: <AiOutlineHome/>, title: "Home", path: "#home" },
+    { icon: <AiOutlineQuestionCircle/>, title: "About", path: "#about" },
+    { icon: <BsStars/>, title: "Features", path: "#features" },
+    { icon: <BsTelephone/>, title: "Contact", path: "#contact" },
+
   ]
 
 

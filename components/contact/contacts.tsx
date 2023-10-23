@@ -4,10 +4,13 @@ import Heading from './heading'
 
 const Contacts = () => {
   return (
-    <div id='contact'>
+
+
+    <div id='contact' className='pt-[1px]'>
     <Heading/>
     <ContactForm/>
     </div>
+
   )
 }
 

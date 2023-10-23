@@ -11,6 +11,12 @@ body {
     margin: 2rem 15rem; */
   }
 
+
+  html {
+    --scroll-behavior: smooth!important;
+    scroll-behavior: smooth!important;
+    }
+
   ::selection {
     background: #3641857a;
   }
