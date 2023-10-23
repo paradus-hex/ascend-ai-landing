@@ -17,7 +17,7 @@ const AboutHeading = () => {
           duration: 0.8}
         }
       }
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{  amount: 0.8 }}
       className="card-container lg:[--x-from:-10rem] lg:[--x-to:0rem] lg:[--opacity-from:100%] lg:[--opacity-to:100%] md:[--opacity-from:0%] md:[--opacity-to:100%] [--opacity-from:0%] [--opacity-to:100%]"
       >
 
@@ -37,7 +37,7 @@ const AboutHeading = () => {
           }
         }
         className=" lg:w-[38rem] lg:text-md pt-[2rem] text-center lg:text-start my-5 text-[#8F9BB7] lg:[--x-from:10rem] lg:[--x-to:0rem] lg:[--opacity-from:100%] lg:[--opacity-to:100%] md:[--opacity-from:0%] md:[--opacity-to:100%] [--opacity-from:0%] [--opacity-to:100%]"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ amount: 0.8 }}
       >
 
       <p>

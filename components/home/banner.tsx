@@ -5,7 +5,8 @@ const Banner = (props: { source: string }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      whileInView={{opacity:1}}
+      viewport={{amount:0.8}}
       transition={{ duration: 0.9 }}
     >
       <div className="flex items-center justify-center">
