@@ -10,7 +10,8 @@ const SubHeading = () => {
       <div className="font-inter text-center">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          whileInView={{opacity:1}}
+          viewport={{amount:0.8}}
           transition={{ duration: 0.6 }}
         >
           <h2 className="font-inter -mt-16 text-lg lg:px-[10rem] text-[#8F9BB7]">
