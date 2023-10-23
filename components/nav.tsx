@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const menus = [
 
-    { icon: <AiOutlineHome/>, title: "Home", path: "#home" },
+    { icon: <AiOutlineHome/>, title: "Home", path: "/" },
     { icon: <AiOutlineQuestionCircle/>, title: "About", path: "#about" },
     { icon: <BsStars/>, title: "Features", path: "#features" },
     { icon: <BsTelephone/>, title: "Contact", path: "#contact" },
@@ -24,14 +24,14 @@ export default function Navbar() {
 
   return (
     <nav className="w-full border-b md:border-0 backdrop-blur-md backdrop-filter bg-opacity-50 fixed pt-2 top-0 z-10">
-      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
+      <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8 lg:px-[7rem]">
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link href="/">
             <h1 className="text-3xl font-bold text-white font-nunito">Ascend.AI</h1>
           </Link>
           <div className="md:hidden">
             <button
-              className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+              className="text-gray-100 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
               onClick={() => setState(!state)}
             >
               <Menu />
@@ -39,7 +39,7 @@ export default function Navbar() {
           </div>
         </div>
         <div
-          className={`flex-1 text-2xl -ml-[8rem] pb-3 mt-4 md:block md:pb-0 md:mt-0 ${
+          className={`flex-1 lg:text-2xl md:text-xl -ml-[8rem] pb-3 mt-4 md:block md:pb-0 md:mt-0 ${
             state ? "absolute text-center bg-black w-[11rem] md:border-none md:bg-transparent lg:bg-transparent lg:border-none border-solid border-[1px] border-purple-400 flex-auto leading-6 overflow right-0 mr-[1rem]" : "hidden"
           }`}
         >
