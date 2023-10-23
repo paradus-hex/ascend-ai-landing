@@ -4,10 +4,10 @@ import Heading from './heading'
 
 const Contacts = () => {
   return (
-    <>
+    <div id='contact'>
     <Heading/>
     <ContactForm/>
-    </>
+    </div>
   )
 }
 
