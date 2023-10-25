@@ -7,7 +7,7 @@ const ToggleTab = (props: any) => {
     <motion.div
     initial={{ opacity: 0 }}
       whileInView={{opacity:1}}
-      viewport={{ amount: 0.8 }}
+      viewport={{ once: true, amount: 0.8 }}
       transition={{ duration: 0.6 }}>
       <div className="flex justify-center mt-32 font-nunito md:text-2xl text-xs">
         <div className="bg-gradient-to-br from-indigo-900/[0.09] via-violet-900/[0.1] to-purple-900/[0.3] flex justify-between items-center rounded-full w-[23rem] md:w-[50rem] bg-[#151934] h-[3rem] md:h-[5rem] px-8">

@@ -6,7 +6,7 @@ const Description = (props: any) => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ amount: 0.8 }}
+      viewport={{ once: true, amount: 0.8 }}
       transition={{ duration: 0.6 }}
     >
       <div className="flex justify-center">

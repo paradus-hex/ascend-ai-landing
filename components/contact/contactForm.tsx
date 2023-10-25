@@ -20,7 +20,7 @@ const FormSchema = z.object({
   username: z.string().min(2, {
     message: "Username must be at least 2 characters.",
   }),
-  help: z.string().min(10, { message: "Minimum 10 character needed." }),
+  help: z.string().min(5, { message: "Minimum 10 character needed." }),
   email: z
     .string()
     .min(1, { message: "This field has to be filled." })
