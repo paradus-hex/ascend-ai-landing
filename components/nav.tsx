@@ -7,17 +7,19 @@ import {AiOutlineHome} from 'react-icons/ai'
 import {BsStars} from 'react-icons/bs'
 import {BsTelephone} from 'react-icons/bs'
 import {AiOutlineQuestionCircle} from 'react-icons/ai'
+import {FaBook} from 'react-icons/fa'
 
 
 export default function Navbar() {
   const [state, setState] = React.useState(false)
 
   const menus = [
-
+    
     { icon: <AiOutlineHome/>, title: "Home", path: "/" },
-    { icon: <AiOutlineQuestionCircle/>, title: "About", path: "#about" },
-    { icon: <BsStars/>, title: "Features", path: "#features" },
-    { icon: <BsTelephone/>, title: "Contact", path: "#contact" },
+    { icon: <AiOutlineQuestionCircle/>, title: "About", path: "/#about" },
+    { icon: <BsStars/>, title: "Features", path: "/#features" },
+    { icon: <BsTelephone/>, title: "Contact", path: "/#contact" },
+    { icon: <FaBook />    , title: "Case", path: "/case" },
 
   ]
 

@@ -7,7 +7,7 @@ const Heading = () => {
     <div id='home' className="font-nunito text-center lg:pt-20 p-10">
       <motion.div initial={{ opacity: 0 }}
       whileInView={{opacity:1}}
-      viewport={{ amount: 0.8 }}
+      viewport={{ once: true, amount: 0.8 }}
       transition={{ duration: 0.2 }}>
 
 
